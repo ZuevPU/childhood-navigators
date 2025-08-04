@@ -70,6 +70,22 @@
             50% { transform: translateY(-10px); }
             100% { transform: translateY(0px); }
         }
+        @media (max-width: 768px) {
+    #table-of-contents {
+        padding: 0.5rem 1rem;
+    }
+
+    #table-of-contents h2 {
+        font-size: 1.25rem; /* уменьшить заголовок */
+        margin-bottom: 1rem;
+    }
+
+    #table-of-contents .toc-item {
+        font-size: 0.875rem; /* уменьшить ссылки */
+        padding: 0.25rem 0.5rem;
+    }
+}
+
     </style>
 </head>
 <body class="bg-gray-50">
@@ -104,7 +120,8 @@
     </header>
 
     <!-- Table of Contents -->
-    <section class="bg-white py-8 sticky top-0 z-10 shadow-sm">
+    <section id="table-of-contents" class="bg-white py-8 sticky top-0 z-10 shadow-sm">
+
         <div class="container mx-auto px-4">
             <h2 class="text-2xl font-bold mb-5 text-center">Содержание</h2>
             <div class="flex flex-wrap justify-center gap-6">
